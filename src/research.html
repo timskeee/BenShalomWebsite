@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Ben-Shalom Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+    <video class="banner-video" src="videos/LabWebsite.mp4" autoplay muted loop playsinline></video>
+    <div class="banner-title">Our Research</div>
+  </div>
+  <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="team.html">Our Team</a>
+  <a href="publications.html">Publications</a>
+  <a href="positions.html">Open Positions</a>
+  <a href="contact.html">Contact</a>
+  </div>
+  <div class="content">
+    <h1>Research</h1>
+    <div class="project-row">
+      <div class="project-box">
+        <h2>Computational Models to Simulate Neuronal Function</h2>
+        <img src="images/modeling_blue_neuron.png" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
+
+        <p>Studying the biophysical properties of neurons, such as the different ion channel distributions and kinetics, can be done by fitting in silico neuronal models to in vitro neuronal recordings. In this process, 
+            a detailed neuron is modeled to a set of electrical circuits that describe its biophysical properties. 
+            The goal is to constrain the in-silico model’s parameters so it will behave like the in vitro neurons recorded during the experiment. This process is done using an optimization algorithm that relies on training the model across thousands of permutations.
+            We have developed a pipeline to fit the models to experimental data and we are now working on improving these models to develop highly detailed biophysical simulations for recorded neurons.</p>
+      </div>
+      <div class="project-box">
+        <h2>Characterizing Neurodevelopmental Disorders Using High Density Microelectrode Arrays</h2>
+        <img src="images/neuron11_cropped.gif" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
+
+        <p>This project embarks on a pioneering exploration to elucidate the complex neurophysiological 
+            mechanisms of neurodevelopmental disorders (NDDs). By harnessing the capabilities of high-density multielectrode arrays (MEAs), this initiative meticulously 
+            analyzes the electrophysiological properties of cells derived from mouse primary neurons, human induced pluripotent stem cells (iPSCs), and organoids. 
+            This approach facilitates a comprehensive characterization of the disorders, allowing for the identification of distinctive patterns and mechanisms at the 
+            cellular level that contribute to the manifestation of NDDs. Through the integration of advanced electrophysiological techniques and diverse cellular models, 
+            the project aims to unravel the intricacies of neuronal circuit dysfunctions, offering potential pathways for the development of targeted therapeutic interventions. </p>
+      </div>
+      <div class="project-box">
+        <h2>Using Deep Neural Networks to Develop <i>in silico</i> Neuronal Models</h2>
+
+        <p>The goal of this project is to predict the biophysical properties of a neuron based on its electrophysiological response to stimuli. 
+            We built a deep learning convolutional network to predict the free parameters of a neuron model given it’s voltage response to a set of stimuli. 
+            Trainees in this project will have the opportunity to interact with various stages of the machine learning process, from data generation, analysis to neural network training. 
+            For this project we are looking for students with an interest in machine learning, optimization, statistics and/or neuroscience with 
+            good programming skills to help us improve the algorithm, generate training data, and increase the accuracy of our models.</p>
+      </div>
+      <div class="project-box">
+        <h2>Microelectrode Array electrophysiology</h2>
+
+        <p>We record from mouse acute slice, primary dissociated and iPSC derived neurons. Recordings are done using current/voltage -clamp MEA or combining current-clamp with MEA.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
