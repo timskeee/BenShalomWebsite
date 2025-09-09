@@ -1,3 +1,27 @@
+/* Publication Box Styles */
+.publication-box {
+  border: 1.5px solid #fff;
+  background: transparent;
+  border-radius: 12px;
+  margin: 28px auto;
+  padding: 24px 18px;
+  max-width: 1000px;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-align:left;
+}
+
+.publication-box a{
+  color: #ec9bea;
+}
+.publication-box a:hover{
+  color: #0064c8;
+  text-decoration: underline;
+}
+.publication-box b{
+  /* color: #ff00e6e3; */
+  color: #6ac5f6;
+}
 /* Google Maps Embed Styling */
 .maps-embed {
   border: 2px solid #fff;
@@ -8,7 +32,7 @@
   width: 100%;
   height: 600px;
   display: block;
-  filter: grayscale(100%) contrast(1.1);
+  /* filter: grayscale(100%) contrast(1.1); */
 }
 /* Consistent Team Image Styling */
 .team-img {
@@ -47,7 +71,7 @@
   background: rgba(0,0,0,0.6);
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 200;
   padding: 32px 64px;
   border-radius: 18px;
@@ -127,7 +151,7 @@
 
 /* Remove the img styling since we will use background-image */
 .content {
-  padding: 0px 20px;
+  padding: 10px 20px;
   text-align: center;
   position: relative;
   z-index: 20;
