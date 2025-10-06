@@ -35,8 +35,11 @@
       </ul>
       <p>The lab is dedicated to advancing our understanding of brain function and developing new approaches for diagnosing and treating neurological disorders.</p>
     </div>
-    <div class="intro-box">
+<video id="scroll-start-video" src="videos/neuron_sync_movie.mp4" muted loop playsinline preload="none" style="max-width:100%;display:block;margin:40px auto;border-radius:12px;">
+  Sorry, your browser doesn't support embedded videos.
+</video>
 
+    <div class="intro-box">
 <!--New News Section ------------------------------------------------------->
 
 <div class="news-header">News</div>
@@ -80,5 +83,49 @@
     <p style="height: 1200px;"></p>
   </div>
 
+
+
+
+
+
+<script>
+// Lazy / scroll-triggered playback for secondary video
+(function(){
+  const vid = document.getElementById('scroll-start-video');
+  if(!vid) return;
+
+  // Helper to start video safely
+  function startVideo(){
+    if(vid.dataset.started) return; // prevent duplicate attempts
+    vid.dataset.started = 'true';
+    const playPromise = vid.play();
+    if(playPromise && typeof playPromise.then === 'function'){
+      playPromise.catch(()=>{ /* silently ignore (e.g. user gesture requirements) */ });
+    }
+  }
+
+  // Strategy 1: IntersectionObserver (preferred)
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          startVideo();
+          io.disconnect();
+        }
+      });
+    }, { root:null, threshold: .45 });
+    io.observe(vid);
+  } else {
+    // Fallback Strategy 2: scroll distance check (approx trigger after 150px)
+    function onScroll(){
+      if(window.scrollY > 250){
+        startVideo();
+        window.removeEventListener('scroll', onScroll);
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive:true });
+  }
+})();
+</script>
 </body>
 </html>

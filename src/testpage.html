@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Ben-Shalom Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Year label overlapping the center line */
+      .timeline-item {
+        position: relative;
+        width: 48%;
+        margin-bottom: 80px;
+        z-index: 2;
+      }
+      .timeline-container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 0 80px 0;
+        min-height: 100vh;
+      }
+      .timeline-year-label {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #000;
+        color: #fff;
+        border-radius: 18px;
+        padding: 8px 32px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        z-index: 10;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        white-space: nowrap;
+        margin-bottom: 0;
+        pointer-events: none;
+      }
+    /* Timeline container */
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 0 80px 0;
+      min-height: 100vh;
+    }
+    /* Vertical center line */
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background: #fff;
+      z-index: 1;
+    }
+    /* Timeline item base */
+    .timeline-item {
+      position: static;
+      width: 48%;
+      margin-bottom: 80px;
+      z-index: 2;
+      padding-top: 32px;
+    }
+    /* Left/right positioning */
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item.right {
+      left: 52%;
+      text-align: left;
+    }
+    /* Project box styling */
+    .timeline-project-box {
+      display: inline-block;
+      background: rgba(0,0,0,0.85);
+      /* border: 1.5px solid #fff; */
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 24px 18px;
+      max-width: 95%;
+      color: #fff;
+      text-align: left;
+      vertical-align: top;
+    }
+    .timeline-project-box img {
+      display: block;
+      margin: 24px auto 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .timeline-project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #6ac5f6;
+    }
+    @media (max-width: 900px) {
+      .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+      }
+      .timeline-line {
+        left: 20px;
+        transform: none;
+      }
+      .timeline-project-box {
+        margin-left: 40px;
+        max-width: calc(100% - 60px);
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="banner">
+    <!-- <video class="banner-video" src="videos/LabWebsite.mp4" autoplay muted loop playsinline></video> -->
+    <video class="banner-video" src="videos/research_page.mp4" autoplay muted loop playsinline></video>
+    <div class="banner-title">Our Research</div>
+  </div>
+  <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="team.html">Our Team</a>
+  <a href="publications.html">Publications</a>
+  <a href="positions.html">Open Positions</a>
+  <a href="contact.html">Contact</a>
+  </div>
+  <div class="content">
+    <h1>Publications</h1>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      <!-- 2025: left -->
+      <div class="timeline-item left" style="position:relative;">
+        <span class="timeline-year-label">2025</span>
+        <div class="timeline-project-box">
+          <div class="publication-box">Garcia JD, Wang C, Alexander RP, Banks E, <b>Fenton T</b>, DeKeyser JM, Abramova TV, George Jr AL, <b>Ben-Shalom R</b>, Hackos DH, Bender KJ. Differential roles of NaV1. 2 and NaV1. 6 in neocortical pyramidal cell excitability. Elife. 2025 Jul 15;14:RP105696 <a href="https://doi.org/10.7554/eLife.105696.3">https://doi.org/10.7554/eLife.105696.3</a>.
+          </div>
+          <div class="publication-box">Haghani, V., Ali, S. M., Cannizzaro, N., <b>Patil, M. M., Sullivan, P. D., Rehamn, A.</b>, Green, R., <b>Ben-Shalom, R.</b>, LaSalle, J. M., & Zarbalis, K. (2025). Excess prenatal folic acid supplementation alters cortical gene expression networks and electrophysiology. bioRxiv (Cold Spring Harbor Laboratory). <a href="https://doi.org/10.1101/2025.05.07.652681">https://doi.org/10.1101/2025.05.07.652681</a>
+          </div>
+          <div class="publication-box">Fink, K., Halmai, J., Cameron, D., Gonzalez, C., Singh, M., Ansari, A., Haghani, V., Monsen, E., Paynton-Cheney, A., Waldo, J., <b>Fenton, T.</b>, <b>Ben-Shalom, R.</b>, & Silverman, J. (2025). Epigenetic reactivation of CDKL5 rescues CDKL5 deficiency Disorder. Research Square (Research Square). <a href="https://doi.org/10.21203/rs.3.rs-7095603/v1">https://doi.org/10.21203/rs.3.rs-7095603/v1</a>
+          </div>
+          <div class="publication-box">Olguin, S. L., Davis, D., <b>Rehman, A.</b>, Sahagun, E., Oswalt, P. S., <b>Patil, M.</b>, <b>Sullivan, P. D.</b>, Zhang, B., Bryda, E. C., <b>Ben-Shalom, R.</b>, & Silverman, J. L. (2025). Novel gain of function mouse model of KCNT1-Related Epilepsy. bioRxiv (Cold Spring Harbor Laboratory). <a href="https://doi.org/10.1101/2025.07.22.666003">https://doi.org/10.1101/2025.07.22.666003</a>
+          </div>
+        </div>
+      </div>
+      <!-- 2024: right -->
+      <div class="timeline-item right" style="position:relative;">
+        <span class="timeline-year-label">2024</span>
+        <div class="timeline-project-box">
+          <div class="publication-box">Clatot, J., Thompson, C. H., Sotardi, S., Jiang, J., Trivisano, M., Balestrini, S., Ward, D. I., Ginn, N., Guaragni, B., Malerba, L., Vakrinou, A., Sherer, M., Helbig, I., Somarowthu, A., Sisodiya, S. M., <b>Ben‐Shalom, R.</b>, Guerrini, R., Specchio, N., George, A. L., & Goldberg, E. M. (2024). Rare dysfunctional SCN2A variants are associated with malformation of cortical development. Epilepsia. <a href="https://doi.org/10.1111/epi.18234">https://doi.org/10.1111/epi.18234</a></div>
+          <div class="publication-box">Quinn, S., Zhang, N., <b>Fenton, T. A.</b>, Brusel, M., Muruganandam, P., Peleg, Y., Giladi, M., Haitin, Y., Lerche, H., Bassan, H., Liu, Y., <b>Ben-Shalom, R.</b>, & Rubinstein, M. (2024). Complex biophysical changes and reduced neuronal firing in an SCN8A variant associated with developmental delay and epilepsy. Biochimica Et Biophysica Acta (BBA) - Molecular Basis of Disease, 1870(5), 167127. <a href="https://doi.org/10.1016/j.bbadis.2024.167127">https://doi.org/10.1016/j.bbadis.2024.167127</a>
+          </div>
+          <div class="publication-box"><b>Fenton T. A.</b>, Haouchine, O. Y., Hallam, E. B., Smith, E. M., Jackson, K. C., Rahbarian, D., Canales, C. P., Adhikari, A., Nord, A. S., <b>Ben-Shalom, R.</b>, & Silverman, J. L. (2024). Hyperexcitability and translational phenotypes in a preclinical mouse model of SYNGAP1-related intellectual disability. Translational Psychiatry, 14(1). <a href="https://doi.org/10.1038/s41398-024-03077-6">https://doi.org/10.1038/s41398-024-03077-6</a></div>
+        </div>
+      </div>
+      <!-- 2023: left (empty) -->
+      <div class="timeline-item left" style="position:relative;">
+        <span class="timeline-year-label">2023</span>
+        <div class="timeline-project-box">
+          <div class="publication-box">No publications listed for this year.</div>
+        </div>
+      </div>
+      <!-- 2022: right -->
+      <div class="timeline-item right" style="position:relative;">
+        <span class="timeline-year-label">2022</span>
+        <div class="timeline-project-box">
+          <div class="publication-box"><b>Ben-Shalom, Roy</b>, Alexander Ladd, Nikhil S. Artherya, Christopher Cross, Kyung Geun Kim, Hersh Sanghevi, Alon Korngreen, Kristofer E. Bouchard, and Kevin J. Bender. "NeuroGPU: Accelerating multi-compartment, biophysically detailed neuron simulations on GPUs." Journal of neuroscience methods 366 (2022): 109400. <a href="https://doi.org/10.1016/j.jneumeth.2021.109400">https://doi.org/10.1016/j.jneumeth.2021.109400</a></div>
+          <div class="publication-box">Dennis M Echevarria-Cooper, Nicole A Hawkins, Sunita N Misra, Alexandra M Huffman, Tyler Thaxton, Christopher H Thompson, <b>Roy Ben-Shalom</b>, Andrew D Nelson, Anna M Lipkin, Alfred L George Jr, Kevin J Bender, Jennifer A Kearney, Cellular and behavioral effects of altered NaV1.2 sodium channel ion permeability in Scn2aK1422E mice, Human Molecular Genetics, Volume 31, Issue 17, 1 September 2022, Pages 2964–2988. <a href="https://doi.org/10.1093/hmg/ddac087">https://doi.org/10.1093/hmg/ddac087</a></div>
+          <div class="publication-box">Ladd A, Kim KG, Balewski J, Bouchard K and <b>Ben-Shalom R</b> (2022) Scaling and Benchmarking an Evolutionary Algorithm for Constructing Biophysical Neuronal Models. Front. Neuroinform. 16:882552. <a href="https://doi.org/10.3389/fninf.2022.882552">https://doi.org/10.3389/fninf.2022.882552</a></div>
+        </div>
+      </div>
+      <!-- 2021: left -->
+      <div class="timeline-item left" style="position:relative;">
+        <span class="timeline-year-label">2021</span>
+        <div class="timeline-project-box">
+          <div class="publication-box">Spratt, Perry WE, Ryan PD Alexander, <b>Roy Ben-Shalom</b>, Atehsa Sahagun, Henry Kyoung, Caroline M. Keeshen, Stephan J. Sanders, and Kevin J. Bender. "Paradoxical hyperexcitability from NaV1. 2 sodium channel loss in neocortical pyramidal cells." Cell reports 36, no. 5 (2021). <a href="https://doi.org/10.1016/j.celrep.2021.109483">https://doi.org/10.1016/j.celrep.2021.109483</a></div>
+        </div>
+      </div>
+      <!-- 2020: right -->
+      <div class="timeline-item right" style="position:relative;">
+        <span class="timeline-year-label">2020</span>
+        <div class="timeline-project-box">
+          <div class="publication-box">Thompson, C. H., <b>Ben-Shalom, R.</b>, Bender, K. J., & George, A. L. (2020). Alternative splicing potentiates dysfunction of early-onset epileptic encephalopathy SCN2A variants. The Journal of General Physiology, 152(3). <a href="https://doi.org/10.1085/jgp.201912442">https://doi.org/10.1085/jgp.201912442</a></div>
+        </div>
+      </div>
+      <!-- 2019 and Earlier: left -->
+      <div class="timeline-item left" style="position:relative;">
+        <span class="timeline-year-label">2019 and Earlier</span>
+        <div class="timeline-project-box">
+          <div class="publication-box">Spratt, Perry WE, <b>Roy Ben-Shalom</b>, Caroline M. Keeshen, Kenneth J. Burke, Rebecca L. Clarkson, Stephan J. Sanders, and Kevin J. Bender. "The autism-associated gene Scn2a contributes to dendritic excitability and synaptic function in the prefrontal cortex." Neuron 103, no. 4 (2019): 673-685. <a href="https://doi.org/10.1016/j.neuron.2019.05.037">https://doi.org/10.1016/j.neuron.2019.05.037</a></div>
+          <div class="publication-box"><b>Ben-Shalom, Roy</b>, Caroline M. Keeshen, Kiara N. Berrios, Joon Y. An, Stephan J. Sanders, and Kevin J. Bender. "Opposing effects on NaV1. 2 function underlie differences between SCN2A variants observed in individuals with autism spectrum disorder or infantile seizures." Biological psychiatry 82, no. 3 (2017): 224-232. <a href="https://doi.org/10.1016/j.biopsych.2017.01.009">https://doi.org/10.1016/j.biopsych.2017.01.009</a></div>
+          <div class="publication-box"><b>Ben-Shalom R</b>, Liberman G and Korngreen A (2013) Accelerating compartmental modeling on a graphical processing unit. Front. Neuro inform. 7:4. <a href="https://doi.org/10.3389/fninf.2013.00004">https://doi.org/10.3389/fninf.2013.00004</a></div>
+          <div class="publication-box"><b>Ben-Shalom, Roy</b>, Amit Aviv, Benjamin Razon, and Alon Korngreen. "Optimizing ion channel models using a parallel genetic algorithm on graphical processors." Journal of Neuroscience Methods 206, no. 2 (2012): 183-194. <a href="https://doi.org/10.1016/j.jneumeth.2012.02.024">https://doi.org/10.1016/j.jneumeth.2012.02.024</a></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

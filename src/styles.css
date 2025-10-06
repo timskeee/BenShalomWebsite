@@ -228,6 +228,24 @@ h1 {
   letter-spacing: 2px;
   font-weight:100;
 }
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ccc;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ccc;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 p {
   font-size: 1.3rem;
   color: #ccc;
