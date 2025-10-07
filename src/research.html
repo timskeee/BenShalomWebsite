@@ -17,6 +17,7 @@
   <a href="research.html">Research</a>
   <a href="team.html">Our Team</a>
   <a href="publications.html">Publications</a>
+  <a href="news.html">News</a>
   <a href="positions.html">Open Positions</a>
   <a href="contact.html">Contact</a>
   </div>
@@ -27,9 +28,9 @@
         <div class="project-box-title">Computational Models to Simulate Neuronal Function</div>
         <img src="images/modeling_blue_neuron.png" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
 
-        <p>Studying the biophysical properties of neurons, such as the different ion channel distributions and kinetics, can be done by fitting in silico neuronal models to in vitro neuronal recordings. In this process, 
+  <p>Studying the biophysical properties of neurons, such as the different ion channel distributions and kinetics, can be done by fitting <i>in silico</i> neuronal models to <i>in vitro</i> neuronal recordings. In this process, 
             a detailed neuron is modeled to a set of electrical circuits that describe its biophysical properties. 
-            The goal is to constrain the in-silico model’s parameters so it will behave like the in vitro neurons recorded during the experiment. This process is done using an optimization algorithm that relies on training the model across thousands of permutations.
+            The goal is to constrain the <i>in-silico</i> model’s parameters so it will behave like the <i>in vitro</i> neurons recorded during the experiment. This process is done using an optimization algorithm that relies on training the model across thousands of permutations.
             We have developed a pipeline to fit the models to experimental data and we are now working on improving these models to develop highly detailed biophysical simulations for recorded neurons.</p>
       </div>
       <div class="project-box">
@@ -45,18 +46,34 @@
       </div>
       <div class="project-box">
         <div class="project-box-title">Using Deep Neural Networks to Develop <i>in silico</i> Neuronal Models</div>
+        <img src="images/research/neuroinverter.png" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
+        <p>A neuron's function is defined by its unique expression of ion channels, but these are nearly impossible to measure directly. Our project solves this inverse problem by creating a Neuro-Inverter: a deep learning model trained to work backward from a neuron's electrical "fingerprint" to its underlying molecular recipe. Our model, a powerful Convolutional Neural Network (CNN) called ONTRA, learned this relationship from a massive dataset of millions of simulated neurons where the ground truth was known. Our ultimate goal is to apply this Neuro-Inverter to real-world experimental data from patch-clamp recordings. This will provide a powerful new tool to accelerate neuroscience research, enabling the rapid classification of neurons and offering new insights into channel-related diseases (channelopathies) like epilepsy and autism.</p>
+      </div>
 
-        <p>The goal of this project is to predict the biophysical properties of a neuron based on its electrophysiological response to stimuli. 
-            We built a deep learning convolutional network to predict the free parameters of a neuron model given it’s voltage response to a set of stimuli. 
-            Trainees in this project will have the opportunity to interact with various stages of the machine learning process, from data generation, analysis to neural network training. 
-            For this project we are looking for students with an interest in machine learning, optimization, statistics and/or neuroscience with 
-            good programming skills to help us improve the algorithm, generate training data, and increase the accuracy of our models.</p>
-      </div>
       <div class="project-box">
-        <div class="project-box-title">Microelectrode Array Characterization of 22q11.2 Microdeletion Syndrome</div>
-        <img src="images/organoid_on_chip.jpeg" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:85%;height:auto;border-radius:12px;" />
-        <p>We record from mouse acute slice, primary dissociated and iPSC derived neurons. Recordings are done using current/voltage -clamp MEA or combining current-clamp with MEA.</p>
+        <div class="project-box-title">Controlling Neuronal Firing with Precision Electrical Pulses</div>
+        <img src="images/research/stim.png" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
+        <p>
+          Electrical stimulation with high-density microelectrode arrays (HD-MEAs) allows us to precisely activate neurons at single-cell and network levels. By delivering controlled electrical pulses or bursts, we can reliably evoke action potentials and adjust the firing rate of neurons. This approach enables systematic study of how neuronal circuits respond to external inputs. Ultimately, it provides a powerful tool to probe excitability, connectivity, and plasticity in brain-derived cultures.</p>
       </div>
+
+      <div class="project-box">
+        <div class="project-box-title">Characterizing KCNT1 Functional Phenotypes</div>
+        <img src="images/research/meapipeline.png" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
+        <p>
+            The KCNT1 gene encodes a sodium-activated potassium channel involved in regulating
+            neuronal excitability. Pathogenic variants cause two autosomal dominant
+            disorders: autosomal dominant nocturnal frontal lobe epilepsy (ADNFLE) and a
+            severe developmental and epileptic encephalopathy (DEE). Clinical outcomes vary widely and no targeted treatments currently exist. Our research aims to use high- density microelectrode array (HD-MEA) chips to record activity from wild-type and KCNT1 mutant mice frontal cortical regions. The MEA is an in vitro system that preserves native circuit architecture, allowing us to characterize electrophysiological and phenotypic properties of KCNT1 neuronal cultures and acute slices, further understanding neuronal network dynamics of genetic variants, which will help us test new pharmacological treatments to regulate its activity. Our pipeline includes spike sorting using python packages such as Spike Interface, Kilosort, and Phy, as well as our own computationally developed methods.</p>
+      </div>
+      
+      <div class="project-box">
+        <div class="project-box-title">Investigating STAT3 signaling</div>
+        <img src="images/research/patch.png" alt="Microelectrode array gif" style="display:block;margin:24px auto;max-width:100%;height:auto;border-radius:12px;" />
+        <p>
+            This project investigates the role of STAT3 signaling in epileptogenesis using the IHKA mouse model of temporal lobe epilepsy. We employ conditional STAT3 knockout mice to test the hypothesis that STAT3 activation is necessary for the development of neuronal and network hyperexcitability. We combine whole-cell patch-clamp electrophysiology in dentate granule cells with high-density CMOS-MEA recordings to quantify changes in intrinsic properties, synaptic transmission, and network-level synchrony and oscillations. These empirical data are integrated into Hodgkin-Huxley-based computational models to formally link the cellular consequences of STAT3 deletion to the suppression of aberrant network activity, thereby identifying and validating novel therapeutic targets.</p>
+      </div>
+
     </div>
   </div>
 </body>

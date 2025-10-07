@@ -17,13 +17,13 @@
   text-decoration:underline;
 }
 .news-event-date{
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 200;
-  color: #9d9d9d;
+  color: #6ac5f6;
   margin-bottom: 3px;
   letter-spacing: 1px;
-  /* font-family: Arial, sans-serif; */
-  font-family: 'Lucida Console', Monaco, monospace;
+  font-family: Arial, sans-serif;
+  /* font-family: 'Lucida Console', Monaco, monospace; */
 }
 .news-event-content {
   font-size: 1rem;
