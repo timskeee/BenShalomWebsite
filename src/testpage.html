@@ -124,14 +124,23 @@
     <video class="banner-video" src="videos/research_page.mp4" autoplay muted loop playsinline></video>
     <div class="banner-title">Our Research</div>
   </div>
-  <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="team.html">Our Team</a>
-  <a href="publications.html">Publications</a>
-  <a href="news.html">News</a>
-  <a href="positions.html">Open Positions</a>
-  <a href="contact.html">Contact</a>
+  <div class="navbar" id="site-navbar">
+    <div class="nav-group">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="team.html">Our Team</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="positions.html">Open Positions</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </div>
   <div class="content">
     <h1>Publications</h1>
@@ -202,5 +211,6 @@
         </div>
       </div>
     </div>
+<script src="scripts.js"></script>
 </body>
 </html>

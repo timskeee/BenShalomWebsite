@@ -11,14 +11,23 @@
     <video class="banner-video" src="videos/publications_page.mp4" autoplay muted loop playsinline></video>
     <div class="banner-title">Publications</div>
   </div>
-  <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="team.html">Our Team</a>
-  <a href="publications.html">Publications</a>
-  <a href="news.html">News</a>
-  <a href="positions.html">Open Positions</a>
-  <a href="contact.html">Contact</a>
+  <div class="navbar" id="site-navbar">
+    <div class="nav-group">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="team.html">Our Team</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="positions.html">Open Positions</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </div>
   <div class="content">
     <h1>Publications</h1>
@@ -77,7 +86,7 @@
     <!---------------------------->
     <hr style="border: none; border-top: 2px solid #5c5c5c; margin: 24px 0;">
     <h2>2019 and Earlier</h2>
-    <div class="publication-box">Spratt, Perry WE, <b>Roy Ben-Shalom</b>, Caroline M. Keeshen, Kenneth J. Burke, Rebecca L. Clarkson, Stephan J. Sanders, and Kevin J. Bender. "The autism-associated gene Scn2a contributes to dendritic excitability and synaptic function in the prefrontal cortex." Neuron 103, no. 4 (2019): 673-685. <a href="https://doi.org/10.1016/j.neuron.2019.05.037">https://doi.org/10.1016/j.neuron.2019.05.037</a>
+  <div class="publication-box">Spratt, Perry WE, <b>Roy Ben-Shalom</b>, Caroline M. Keeshen, Kenneth J. Burke, Rebecca L. Clarkson, Stephan J. Sanders, and Kevin J. Bender. "The autism-associated gene Scn2a contributes to dendritic excitability and synaptic function in the prefrontal cortex." Neuron 103, no. 4 (2019): 673-685. <a href="https://doi.org/10.1016/j.neuron.2019.05.037">https://doi.org/10.1016/j.neuron.2019.05.037</a>
     </div>
     <div class="publication-box"><b>Ben-Shalom, Roy</b>, Caroline M. Keeshen, Kiara N. Berrios, Joon Y. An, Stephan J. Sanders, and Kevin J. Bender. "Opposing effects on NaV1. 2 function underlie differences between SCN2A variants observed in individuals with autism spectrum disorder or infantile seizures." Biological psychiatry 82, no. 3 (2017): 224-232. <a href="https://doi.org/10.1016/j.biopsych.2017.01.009">https://doi.org/10.1016/j.biopsych.2017.01.009</a>
     </div>
@@ -87,5 +96,6 @@
     </div>
 
   </div>
-</body>
+  <script src="scripts.js"></script>
+  </body>
 </html>

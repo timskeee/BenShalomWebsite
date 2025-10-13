@@ -161,12 +161,26 @@ ul.homelist{
 }
 /* .navbar button {
 } */
+/* Nav links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0; /* spacing handled by link margins */
+}
+
+/* Wrapper for hamburger + dropdown */
+.nav-group {
+  display: flex;
+  align-items: center;
+}
+
 .navbar a {
   background: transparent;
   color: #fff;
   text-decoration: none;
-  margin: 0 32px;
-  padding: 18px 48px;
+  margin: 0 18px;
+  padding: 14px 28px;
   font-size: 1rem;
   font-family: Arial, sans-serif;
   border-radius: 8px;
@@ -180,6 +194,139 @@ ul.homelist{
 .navbar a:hover {
   background: #222;
   color: #ffd700;
+}
+
+/* Hamburger toggle (hidden on wide screens) */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+  position: relative;
+  /* Define a predictable drawing box for the icon */
+  width: 32px;
+  height: 24px;
+  padding: 0; /* override padding to keep box tight */
+  line-height: 0;
+  overflow: visible;
+}
+.nav-toggle:focus {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+.nav-toggle .bar {
+  display: block;
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  background: #fff;
+  margin: 0;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+  transform-origin: center;
+  top: 50%;
+  border-radius: 1px;
+  transform: translateY(-50%);
+}
+
+/* Closed positions for 3 bars (top/middle/bottom) */
+.nav-toggle .bar:nth-child(1) {
+  transform: translateY(calc(-50% - 7px));
+}
+.nav-toggle .bar:nth-child(2) {
+  transform: translateY(-50%);
+}
+.nav-toggle .bar:nth-child(3) {
+  transform: translateY(calc(-50% + 7px));
+}
+
+/* Mobile / narrow screens */
+@media (max-width: 1050px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 6px 8px;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; /* align to navbar padding */
+  }
+
+  .nav-group { position: relative; }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 6px); /* sit just below the hamburger outline */
+    left: -8px; /* flush with viewport left (offset navbar's 8px left padding) */
+    right: auto;
+    width: 50vw; /* about half the page width */
+    min-width: 240px;
+    max-width: 520px;
+    background: rgba(0,0,0,0.8); /* semi-transparent */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 12px 16px;
+    border-bottom: 1px solid #222;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    /* Animation baseline */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.3s;
+    z-index: 101; /* ensure above page content */
+  }
+
+  /* When navbar is open, show the menu */
+  .navbar.open .nav-links {
+    max-height: 70vh; /* enough space for links */
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  /* Make links full-width touch targets */
+  .navbar .nav-links a {
+    margin: 4px 0;
+    padding: 14px 16px;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  /* Reduce banner title size slightly on small screens for better fit */
+  .banner-title {
+    font-size: 2.2rem;
+    padding: 16px 24px;
+  }
+}
+
+/* Hamburger icon transforms into an X when menu is open */
+.navbar.open .nav-toggle .bar:nth-child(1) {
+  transform: translateY(-50%) rotate(45deg);
+}
+.navbar.open .nav-toggle .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar.open .nav-toggle .bar:nth-child(3) {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Slightly shrink the icon when open so the X stays within the same visual box */
+.navbar.open .nav-toggle {
+  transform: scale(0.92);
 }
 /* .banner {
 } */
