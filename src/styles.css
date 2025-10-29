@@ -21,9 +21,12 @@
   text-decoration: inherit;
   transition: color 0.2s ease;
 }
+.news-event-title a:visited {
+  color: inherit; /* keep visited links white */
+}
 .news-event-title a:hover,
 .news-event-title a:focus-visible {
-  color: #ffd700; /* gold on rollover to match navbar hover */
+  color: #00e1ff; /* blue on rollover */
 }
 .news-event-date{
   font-size: 1.3rem;
